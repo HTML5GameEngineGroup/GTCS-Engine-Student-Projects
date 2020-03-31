@@ -1,0 +1,76 @@
+{
+    "scene1": [
+        {
+            "NPCName": "Dye",
+            "text": "Dye: Hello this is a demonstration of the"
+        },
+        {
+            "NPCName": "Dye",
+            "text": "dialogue system."
+        },
+        {
+            "NPCName": "Portal",
+            "text": "Portal: It isn't really good, very rough."
+        },
+        {
+            "NPCName": "Dye",
+            "text": "Dye: Hey, atleast its still pretty cool."
+        },
+        {
+            "NPCName": "Dye",
+            "text": "Dye: What do you think?"
+        }
+    ],
+    
+    "scene2": [
+        {
+            "NPCName": "Portal",
+            "text": "Portal: The player is lying, they just don't"
+        },
+        {
+            "NPCName": "Portal",
+            "text": "want to hurt the developers' feelings."
+        },
+        {
+            "NPCName": "Dye",
+            "text": "Dye: You are way too negative."
+        },
+        {
+            "NPCName": "Dye",
+            "text": "Dye: We should remove you."
+        },
+        {
+            "NPCName": "Portal",
+            "text": "Portal: !!!"
+        }
+    ],
+    
+    "scene3": [
+        {
+            "NPCName": "Dye",
+            "text": "Now that the portal is gone we can continue."
+        },
+        {
+            "NPCName": "Dye",
+            "text": "This is another demonstration."
+        },
+        {
+            "NPCName": "Dye",
+            "text": "How does it look?"
+        }
+    ],
+    
+    "scene4": [
+        {
+            "NPCName": "Dye",
+            "text": "Yes it is like a visual novel."
+        }
+    ],
+    
+    "scene5": [
+        {
+            "NPCName": "Dye",
+            "text": "Its suppose to look like a visual novel."
+        }
+    ]
+}

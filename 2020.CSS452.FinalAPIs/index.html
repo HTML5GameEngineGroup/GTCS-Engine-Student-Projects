@@ -1,0 +1,211 @@
+﻿<html>
+
+	<head>
+		<title>Winter 2020: Extension APIs to the GTCS Game Engine</title>
+		<style type="text/css">
+		.auto-style1 {
+			color: #FF0000;
+		}
+		.auto-style2 {
+			text-decoration: underline;
+		}
+        .column {
+            float: left;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .row:after {
+            display: table;
+        }
+		</style>
+	</head>
+
+<body>
+	
+<h2><b>Winter 2020 CSS452: 2D Game Engine Development. Final Projects</b></h2>
+
+    These are the final projects we developed during the last 
+    two weeks of 
+    <a href="https://myuwbclasses.github.io/CSS452/">CSS452 in Winter Quarter 2020</a> as 
+    ways to demonstrate our understanding of game engines, specifically, the
+	<a href="https://gamethemedgroup.github.io/GTCS-GameEngine/">
+	GTCS game engine</a> we have learned to build in this class. 
+	<p><strong><span class="auto-style1">NOTE</span>: </strong>You should run 
+	the games using the<strong> <span class="auto-style2">Chrome web browser</span>.
+	</strong>Explore 11 does not support AudioContext and Mozilla Firefox (v 
+	39.0) does not support GLSL shaders and thus will not allow the games to 
+	run.</p>
+<hr>
+
+<table border="1" width="100%" bordercolor="#404040">
+
+<!-- 1 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Josh Max<br>
+         Daniel Smith
+</td>
+<td>
+		<p><b><u>Emitter and Shadow</u></b></p>
+	   <p>Our module supports 2D shadows. Users can create light objects that brighten the scene, and Renderables create shadow by blocking light. Our module provides an EmitterSource class that emits light, brightening the appropriate region. When a Renderable occupies a lit region, it creates an unlit region where a shadow would appear. Light regions are brightened, and unlit regions are darkened. Our module only supports one lighting model, PointEmitterSource, which emits light in all directions to a specified distance. Our module supports multiple PointEmitterSource objects and allows developers to specify color, luminosity, and range for each.
+</p>
+<img border="0" src="1.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="https://joshumax.github.io/CSS452_Final/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://joshumax.github.io/CSS452_Final/docs/index.html">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 2 -->
+<tr>
+<td style="vertical-align: center; horizontal-align: center"  width="15%">
+     <b>Developers</b><br >
+         Camden D. Brewster <br>
+         Matthew Munson
+         
+</td>
+<td>
+		<p><b><u>Terrain Geneation System</u></b></p>
+	   <p>Our system provides a tile map to support random terrain generation with pre-defined shape and vegetation generation.
+</p>
+
+<img border="0" src="2.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="https://mmunson2.github.io/GameEngineDesign-FinalProject/public_html/demo.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://mmunson2.github.io/GameEngineDesign-FinalProject/public_html/tilemap.html">API documentation</a> 
+    &nbsp &nbsp &nbsp
+    <a href="https://mmunson2.github.io/GameEngineDesign-FinalProject/public_html/tutorials.html">Tutorials on using the API.</a> 
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 3 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Cody Thayer<br>
+         Jordan Lawson
+</td>
+<td>
+		<p><b><u>Quad Tree System</u></b></p>
+	   <p>The Quad Tree system is designed to be used in lue of basic collision checking, rather than checking every object with every object that could possibly collide in the entire world space. You can just check objects nearby for collisions.
+</p>
+
+<img border="0" src="3.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="https://jlawso06.github.io/CThayer_JLawson_FinalProject/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://jlawso06.github.io/">API documentation</a> 
+    &nbsp &nbsp &nbsp
+    <a href="https://jlawso06.github.io/TutorialPage1.html">Tutorials on using the API.</a> 
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 4 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Jonathan Cho<br>
+         David Kim
+</td>
+<td>
+		<p><b><u>Grid System </u></b></p>
+	   <p>Grid system API and utilities to support creation and integration of grids in games.
+</p>
+
+<img border="0" src="4.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="http://gameengineapi-env.eba-itxjse22.us-west-1.elasticbeanstalk.com/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://kimdav011.github.io/GameEngineAPI/APIDocumentation/out/index.html">API documentation.</a> 
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 5 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Josh Kennedy<br>
+         Marc Skaarup<br>
+         Quan Nghiem
+</td>
+<td>
+		<p><b><u>Object Groups </u></b></p>
+	   <p>The GameObject hierarchy is designed to make linking GameObjects and their transforms together as simple as possible. It gives each GameObject the ability to set a single parent, and any number of children. The transforms of the children will reflect the changes made to the transforms of all parents, grandparents, etc. of that GameObject.
+</p>
+
+<img border="0" src="5.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="https://joshjke.github.io/ObjectHierarchyDocumentation/Parenting/ParentingExample.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://joshjke.github.io/ObjectHierarchyDocumentation/">API documentation.</a> 
+<p>
+<br>
+	</td>
+</tr>
+
+<!-- 6 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br>
+         Isaiah Snow<br>
+         Matthew Taing
+</td>
+<td>
+		<p><b><u>A* Search Support </u></b></p>
+	   <p>Integration of path finding functionality into the game engine.
+</p>
+
+<img border="0" src="6.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="https://tallmonkeyfist.github.io/FinalProject/HelloWorldMP5/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://taingmat.github.io/AStarSearchWebsite/">API documentation</a> 
+    &nbsp &nbsp &nbsp
+    <a href="https://taingmat.github.io/AStarSearchWebsite/Tutorial.html">Tutorials on using the API.</a> 
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 7 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Bill Pham<br>
+         Phuc Tran
+</td>
+<td>
+		<p><b><u>Dialog System </u></b></p>
+	   <p>This is the dialogue module which will allow you to create a dialogue system in the game engine. The module will be able to display a series of dialogue scenes as described in a json file. The module will also allow you to create branching dialogue through the use of option buttons. You can customize the look of the dialogue and the options.
+</p>
+
+<img border="0" src="7.ScreenShot.jpg" width="250px"/>
+    Links to: 
+    <a href="7.DialogSystem/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://billphaml.github.io/index.html">API documentation and tutorials</a>.
+<p>
+<br>
+	</td>
+</tr>
+
+
+</table>
+</body>
+</html>
