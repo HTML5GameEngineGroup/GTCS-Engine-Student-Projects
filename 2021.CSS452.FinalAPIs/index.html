@@ -1,0 +1,384 @@
+<html>
+
+	<head>
+		<title>Winter 2021: Extension APIs to the GTCS Game Engine</title>
+		<style type="text/css">
+		.auto-style1 {
+			color: #FF0000;
+		}
+		.auto-style2 {
+			text-decoration: underline;
+		}
+        .column {
+            float: left;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .row:after {
+            display: table;
+        }
+		</style>
+	</head>
+
+<body>
+	
+<h2><b>Winter 2021 CSS452: 2D Game Engine Development. Final Projects</b></h2>
+
+    These are the final projects we developed during the last 
+    two weeks of 
+    <a href="https://myuwbclasses.github.io/CSS452/">CSS452 in Winter Quarter 2021</a> as 
+    ways to demonstrate our understanding of game engines, specifically, the
+	<a href="https://gamethemedgroup.github.io/GTCS-GameEngine/">
+	GTCS game engine</a> we have learned built during this class. 
+	<p><strong><span class="auto-style1">NOTE</span>: </strong>You should run 
+	the games using the<strong> <span class="auto-style2">Chrome web browser</span>.
+	</strong>Explore 11 does not support AudioContext and Mozilla Firefox (v 
+	39.0) does not support GLSL shaders and thus will not allow the games to 
+	run.</p>
+<hr>
+
+<table border="1" width="100%" bordercolor="#404040">
+
+<!-- 1 -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+         Jason Dekema <br>
+         Zach Hanneman
+</td>
+<td>
+	<p><b><u>Grid System</u></b></p>
+Our Grid System supports the establishment of a grid-based coordinate system within games. Objects can be bound to the grid, managing all movement and interactions within the grid, or serve as a way of simplifying placement of some objects while maintaining unrestricted movement of other objects.
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1Zg06JtLMkBQmo-AIaWB6xzbw-IgOWHheuMxCsALkraM/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/17kgpR9Do7KAdfJsKc3BuW_LWsoejYn2cnK4WDJZos4I/edit?usp=sharing">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1Zbnx9GQJtEF2SwUPFIqaXhNQblGWODqmRiOmQXLebUw/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1rQNiV7fO2DwscALCcHBcF_Au1ItoOhyVuZJEvyht-Sw/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1qTeiXn99J5pupjMD0-gUF04WDXlq7m4R" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1IVN2iAuMq252YDTQONPB12rdJ6hIguYd" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://hannez-edu.github.io/css452-gridsystem/demo/Dekema_Hannez_Grid_API/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://hannez-edu.github.io/css452-gridsystem/">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+<!-- 2 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Connor Goan <br>
+         Weston Goggins <br>
+	 Stephen Swetonic
+</td>
+<td>
+	<p><b><u>API Title: Window Support</u></b></p>
+<i><b>Template: </i></b>Our project adds support for windows similar to those you would find on Microsoft Windows. They can contain a viewport and are draggable and resizeable. Other renderables can be made draggable and resizeable as well.
+</p>
+
+    <p><b>Prject Process:</b>
+	<a href="https://docs.google.com/presentation/d/1Ip896JKxgbkZdnNVIhl6FPEuw0hIc0ZQIwnPKJ9cqp0/edit#slide=id.p">Survey Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1cRsPRLxI7sAeFoe4kO5El_v-ed4q6CykIx3GZ9USttM/edit#slide=id.p">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://github.com/goanc/TheGriffinsWindowsFinal">Github</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/105ZDKxtp2ETI6GLAp83hQgD5cmpHYyHzdvdRuuxpPJE/edit#slide=id.p"></a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://sswetonic.github.io/images/demo1.png" width="250px"/>
+	<img border="0" src="https://sswetonic.github.io/images/demo2.png" width="250px"/>
+	<img border="0" src="https://sswetonic.github.io/images/demo3.png" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://sswetonic.github.io/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://sswetonic.github.io/">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 3 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Satrya Pradana, <br>
+         Nihal Sandadi, <br>
+	 Adhiesha Jayasinghe
+</td>
+<td>
+	<p><b><u>Procedural Terrain Generator</u></b></p>
+<i><b>Description: </i></b>Our module provides users with the ability to generate procedural terrain, with a number of parameters affecting the shape and appearance of the terrain. We provide the ability for developers to define a terrain of layered tiles, with each tile layer comprised of tiles with a certain texture (defined by the developer). Furthermore, we include several presets for the developer to use, such as mountains, plateaus, and valleys, as well as functionality enabling developers to input their own, customized terrain structures, which then procedurally spawn in the generated world. Finally, we offer the ability for developers to input object textures and have those textures appear as objects on the surface of their terrain, such as trees and rocks.
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1017KT3kewOOefUcXYrdOaJDyTqh-TrqFk0nz1sB8Uzk/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1bYHeEF8nk8jcjFqkadwnDda4Dd4lclGFQ86ae0z67R0/edit?usp=sharing">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1B-RoUjv4iVH5XxyY16Nz07ZI-G1HBWfzDTwwTSx4oyw/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/18mCnTt0DMOG0vedIVHGa7U-yFEDF8Fuzk9u6liCaCD4/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1-t3_xx22pwR0cQx8AeiDaJ2iDexLqEiQ" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1_btuphqs7VNJuOYK9MtstTu4ahjNXsYY" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://ashieda.github.io/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://ryokususanta.github.io/doc.html">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+<!-- 4 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br>
+         Brandon Vassion <br>
+         Chris Wu <br>
+		 Kenneth Ven
+</td>
+<td>
+	<p><b><u>Map Editor</u></b></p>
+<i><b>Description: </i></b> This map editor API will allow users to create various types of Map Editors. The API provides a Map class that utilizes sets of MapObjects and Terrain which can be freely modified by the user. The API supports Terrain traversability and Object passability to give a more realistic feel to the map.
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1f8W_hdrR0bpoWAMhSsuvq571lWNCyXG7Q6MuEKsPMSg/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1n3if4hrEEEw6dxx-UJffVcQe5qDYH6IxouoSCJnFrMQ/edit?usp=sharing">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1C2YgjVW9wM7m85dJAsdIVGabRB1OBLKu84pmMjdAwPY/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/15ZWqPVOJVGKKNi1DGoFXI4QCigInbCYUbDL7del42iE/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1_JlRCjWT6w1LWPJPDM7h38RDbcs4tUDq" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1aalqvx1JjleoPp9Bgb7bQd1pq9Yl9Yv0" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://vassbran.github.io/MapEditorAPI/public_html/index.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://vassbran.github.io/MapEditorAPI/">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+<!-- 5 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Victor Avelar<br>
+         Daniel Lorentz<br>
+		 Noah Reiniger
+</td>
+<td>
+		<p><b><u>Fog of War</u></b></p>
+	   <p>Our module creates a fog of war effect that is rendered over the map. Users can select what image the overlay is, how big the field of view is for an object, and how many objects have fields of view. 
+</p>
+<img border="0" src="https://drive.google.com/uc?id=1dFCkAUgY-ysAxIHnsvVio-Im9LFKcL8X" width="250px"/>
+<p>
+    Links to: 
+    <a href="https://victor-avelar.github.io/FogOfWarSDK/demo.html">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://victor-avelar.github.io/FogOfWarSDK/index.html">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 6 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br>
+        Scott Shirley - <a href="https://github.com/Scottin3d"> @scottin3d</a><br>
+        Kevin Blair -  <a href="https://github.com/MadArkadian"> @MadArkadian</a><br>
+        Nicholas Chambers - <a href="https://github.com/SeleniumEclipse"> @SeleniumEclipse</a><br>
+</td>
+<td>
+    <p><b><u>UI Canvas API</u></b></p>
+
+    <p>The UI Canvas API provides centralized support for the game designer to access UI controls such as buttons, sliders, toggles, ect. 
+        Currently in gEngine, 'UI' objects need to be created using renderables and would need new individual behaviors for each different type of object. 
+        Our UI Canvas API allows for a modular and easy way to combine all UI into one simple package.
+    </p>
+
+    <b>Prject Process:</b>
+	<a href="https://docs.google.com/presentation/d/1IN-zxxz9dVbIhDqv4WIdmsNjLM_ZeKOJuhBQIaboRrg/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1_2nqYkFuxJQTMnrDqjq3j8oqNa_SZAjAs76Kee6vPBk/edit?usp=sharing">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1-nzRstUhLOdvoWJK1Le8MQfRJOtmGsaRA5P1YCadxPQ/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1Bxj8-NmvNUx2amRmtIcWFdHEBi_o6_2WwQRSeJyCt3I/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+    
+<p>
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1CbqvBhUtj4LcmftI1m4jQL42kSt4NsMD" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1_jp0ONcv9z9g73yXF1zPtyFlabpqjpmG" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1nmF6sxMAj3Vnb728Q4FWLOj_eweRasLm" width="250px"/>
+</p>
+
+Links to:
+    <a href="https://scottin3d.github.io/CanvasDemo/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://scottin3d.github.io/CanvasAPI">API documentation.</a>	
+<p>
+<br>
+</td>
+
+</tr>
+
+<!-- 7 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+        Sukeerth Vegaraju, <br>
+        Nikhil Alapati, <br>
+        Gabriel Oliver
+</td>
+<td>
+	<p><b><u>API: Raycasting and Bounding Volume Hierarchy</u></b></p>
+<i>Our module supports raycasting and a way to group game objects with bounding volume hierarchies (BVH). 
+   <br> Users can create objects and insert them into the heirarchial bounding volume manager. Which then, the user could create raycasts and detect hits in an efficient manner without a huge performance cost. Developers looking to use many raycasts for static objects would find this API very useful for cost efficiency.
+   <br>Without BVH, checking raycasting collision is Big O(n), where n is all gameobjects that could possibly be collided. With all gameobjects grouped in a BVH, checking raycasting collisions at best is Big O(log(n)) and at worst it's O(log(n) * n).</i>
+  
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1uny5HG_An8n7lzj-lvSKe-GCAapGuIrWC79GzsZdpgE/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1OX1pf_310IErWRaZNCemFB5gCl-5v0x0I3OinXsdhfM/edit?usp=sharing">API Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1OX1pf_310IErWRaZNCemFB5gCl-5v0x0I3OinXsdhfM/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://drive.google.com/file/d/1E-WcKA8zMUqyDqKeno-5KwWRToyJYjHe/view?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1xRkJNPSGOOu75-4yaI_7tTEEQ1P6AePM" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1qHs1F2vtzJCykgY4jH0TfsPdHXwUkyED" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1BD2i4gwynvE5IzFv8KSf4hVND4Z78KLb" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://nikhilalapati.github.io/CSS452FinalProject/public_html/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="7/CoolCatsSDK.html">SDK Documentation.</a>
+    &nbsp &nbsp &nbsp
+    <a href="7/tutorial.html">Tutorial</button></a>
+<p>
+<br>
+	</td>
+
+<!-- 8 -->
+<tr>
+                <td style="vertical-align: center;">
+                <b>Developers</b><br >
+                Yaniv Schwartz <br>
+                Nick Soerens <br>
+                Patrick Miles
+                </td>
+                <td>
+                <p><b><u>Lighting System API</u></b></p>
+                <i><b>Template:</b></i>This API supports the drawing of a lighting system relative to other lights and objects. Objects will cast a shadow behind them when lit from the front. This shadow can be cast from one of the types of lights that we implemented
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1PQQU89SuSXucM5Ty91x24OZazr-SceLQdYeJgMrRCrY/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1QHX9hjO13nw1qfjpijMCI_-F6rSQXuCg2Xmvjx7Z53c/edit?usp=sharing">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1c4EOCP6SE6EBM2iohGHGu7yMZJl5AL3NeMlGf-iiXrY/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/17OOaOuFa96sHobA2IsStRziAF9n_9HYMO3xts9VPSEE/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img src="https://drive.google.com/uc?id=1OkWUxDNB_oV3JltHeGFnU32Hdlz9_l4V" width="250px"/>
+	<img src="https://drive.google.com/uc?id=1_1KwLzLeQcck_assu4_bxDOScJTrdxwh" width="250px"/>
+	<img src="https://drive.google.com/uc?id=11Z7UQ-EBtHSrndtUtMOodpfajkbm_AQi" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://darkredtiredmodels.nivista.repl.co/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://darkredtiredmodels.nivista.repl.co/docs/resources/documentation/api/index.html">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+<!-- 9 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+         Leonardo Mota-Villaraldo <br>
+         Cheuk-Hang Tse
+</td>
+<td>
+	<p><b><u>TurnSystem API</u></b></p>
+Our module supports local turn system. Users can create a turn system that can adapt to different turn types (Timed, Conditional, Priority). Our module provides an Setting.Builder class that allow the user to set the turn type, max number of player allows, and required parameters based on the turn type. Our module supports a Setting object that can be built using the builder object. It is used get parameters setted by the Setting.Builder object. At last, our module supports the TurnSystem Object, which must be initialize by the setting object. Our module only supports 2 or more user in the turn system. 
+</p>
+
+    <p><b>Prject Process:</b>
+	<a href="https://docs.google.com/presentation/d/1zynw0kKJiUjC9fH_pwFTYVRmEAzRSMmLq6o2KN87TVM/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1yqQpm-QvX_8mSBBEgDFi5qeOgDL7kNo2kA6Cyy1d1H4/edit?usp=sharing">Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1hgwr9oMoO8gms5rGKVpDaVqXh0juc2He5-mWcRUpsRU/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/170Gh6uOYUa8S1MUd2B2JZIYiFKTOVjjNnWx5paJvRkc/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1nZY4QTWNoOpScqjEMHJ_zGaL4ILwD3LR" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1uR0iljil4Ve8ahBp_0-PiyUlPsol9FBz" width="250px"/>
+	<img border="0" src="https://drive.google.com/uc?id=1ghNwaBIOnBwnykmK8C713IokIMj7fJEL" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://tsechapman.github.io/TurnSystemDemo/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://tsechapman.github.io/TurnSystemAPI_Website/index.html">API documentation.</a>	
+<p>
+<br>
+	</td>
+</tr>
+
+</table>
+</body>
+</html>
