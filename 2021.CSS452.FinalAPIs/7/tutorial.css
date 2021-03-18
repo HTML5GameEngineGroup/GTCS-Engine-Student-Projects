@@ -1,0 +1,24 @@
+body {
+  background-color: #181818;
+  text-align: center;
+  color: white
+}
+
+.section h2 {
+  color: lightskyblue;
+  background-color:rgb(73, 64, 82);
+}
+.section {
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.section img {
+  width: 100%;
+}
+
+code {
+  background-color: #000000;
+  color: #00FF00;
+}
