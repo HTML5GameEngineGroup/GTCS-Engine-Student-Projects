@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Raycast Tutorial</title>
+        <link rel="stylesheet" href="tutorial.css" />
+    </head>
+    <body>
+        <h1>Tutorial</h1>
+        <div>
+          <div class="section"> 
+            <h2> Part 1: Creating GameObjects to Detect Raycast Intersection</h2>
+            <p>First, we create an array of <code>GameObject</code>s (any object that inherents a <code>Transform</code>) for anything we want to be detected by <code>Raycast</code>s.</p>
+            <image src="Part1Image.png" />
+          </div>
+          <div class="section"> 
+            <h2> Part 2: Contstructing a Bounding Volume Hierarchy </h2>
+            <p>Then, we pass this array of created <code>GameObject</code>s into the constructor for the <code>HeirarchicalVolumeManager</code> object to create a Bounding Volume Hierarchy (BVH).</p>
+            <image src="Part2Image.png" />
+            <p>This builds a BVH and organizes all of the passed GameObjects into the tree. Now searching for raycast interception is a lot less costly (before searching would take O(n), but now its averaged at O(log(n))).</p>
+          </div>
+          <div class="section"> 
+            <h2> Part 3: Casting Rays </h2>
+            <p>To cast a ray, we first create a new <code>Raycast</code> object and 
+              then provide the start point and end point of the raycast (in World Coordinates <strong>[x,y]</strong>).</p>
+            <image src="Part3Image.png" />
+              <p>
+                To check if the raycast has intercepted any objects just call the 
+                <code>update(headNode)</code> function to get a list of all the
+                 objects it intercepted.
+                <div>
+                  <i>(Note that <code>headNode</code> is simply the <code>HeirarchicalVolumeManager.getHeadNode()</code>.)</i>
+                </div>
+              </p>
+              
+            <image src="Part3_2Image.png" />
+              <p>
+                Now we can use this array of intercepted <code>GameObject</code>s and use them in any way we wish.
+              </p>
+          </div>
+
+        </div>
+    </body>
+</html>
