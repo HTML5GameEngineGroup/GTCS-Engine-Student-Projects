@@ -1,0 +1,403 @@
+<html>
+
+	<head>
+		<title>Winter 2022: Extension APIs to the GTCS Game Engine</title>
+		<style type="text/css">
+		.auto-style1 {
+			color: #FF0000;
+		}
+		.auto-style2 {
+			text-decoration: underline;
+		}
+        .column {
+            float: left;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .row:after {
+            display: table;
+        }
+		</style>
+	</head>
+
+<body>
+	
+<h2><b>Winter 2022 CSS452: 2D Game Engine Development. Final Projects</b></h2>
+
+    These are the final projects we developed during the last 
+    two weeks of 
+    <a href="https://myuwbclasses.github.io/CSS452/">CSS452 in Winter Quarter 2022</a> as 
+    ways to demonstrate our understanding of game engines, specifically, the
+	<a href="https://apress.github.io/build-your-own-2d-game-engine-2e/">
+	GTCS game engine</a> we have learned built during this class. 
+	<p><strong><span class="auto-style1">NOTE</span>: </strong>You should run 
+	the games using the<strong> <span class="auto-style2">Chrome web browser</span>.
+	</strong>Explore 11 does not support AudioContext and Mozilla Firefox (v 
+	39.0) does not support GLSL shaders and thus will not allow the games to 
+	run.</p>
+<hr>
+
+<table border="1" width="100%" bordercolor="#404040">
+
+<!-- 1 -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Dane Ojala, <br>
+            Pavel Peev 
+</td>
+<td>
+	<p><b><u>API: Raycaster Rendering</u></b></p>
+    Our API implements several classes that will be used together to allow 
+    users of the game engine to create 3D gameplay using a Raycasting engine. This API allows users of the game engine to quickly implement a retro-3D look, complete with texture support, camera movement, and more. Users can use a RCCamera in conjunction with a GridMap object of textured Tiles to implement basic games with raycast graphics. RCSpriteRenderable objects allow the user to add enemies, pickups, etc. that are rendered by the RCCamera as well.
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1jA9f6IJN2a8657_cnVCQgXYmmdBn1t6s194PlK-_g4I/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1h3tcX__BFDYt7Ib3yGkglTMXM_GUWVC9O2a4FvRQVyQ/edit?usp=sharing">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1-FDf1NLb2mITxmS0NihlC2jTXOFahAGNyRDT6jzEOFM/edit?usp=sharing">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://drive.google.com/uc?id=1FNMJvfvi5UIT88gKARJiu6cU_of5KNMW" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=1Z92y-aKbxU4Zcq0z-d88dZC65aGjDAls" width="250px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://thesquashedman.github.io/RayCast-Project/">Demo of API</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://daneoj.github.io/Doomers_RayCast_API/">SDK Documentation.</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://daneoj.github.io/Doomers_RayCast_API/Tutorial">Tutorial</button></a>
+    <p>
+    <br>
+</tr>
+
+
+<!-- 2 -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Ayrton Muniz, <br>
+            Vicent Allen 
+</td>
+<td>
+	<p><b><u>API: Terrain Generation</u></b></p>
+    Our module supports generating a 2D top-down terrain generation via using gradient noise. This terrain will consist of a grid of renderables that are called tiles. These tiles can be any texture to form the look of a terrain. 
+
+A terrain consists of multiple layers to allow for more than one pass in the terrain. For example, the first pass can be the ground (like grass) and the second pass can determine where trees are placed.
+
+Basic functions are used to manipulate or gather information about the terrain. For example, the position (0,0) can contain a tile that is user defined as “Water” and you can manipulate this “Water” tile to instead become “Ice” using the API.
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1cN11E5v93Vpx_7vZ3FL7V4arusrvsbuGmQWR9LVFCVc/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1KRZ_7Kn3TWfXM4_HBb5sd6IR7YwcwoS46QwS4RpHiGg/edit?usp=sharing">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1hB52QZVUO-rfeOyXRmSYKwOVuB_xgzdCou1hItTzaC0/edit?usp=sharing">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://drive.google.com/uc?id=1UDbrsHhRIhLprKm_oPKby1nPG7U9gBWo" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=1JzcqDz0pO5PZ_ncDC3om7QD5Nv3dEhTa" width="250px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://aj213.github.io/452CyberNoise/">Demo of API </a>
+        &nbsp &nbsp &nbsp
+        <a href="https://cyberva.github.io/CyberNoiseSDKWebsite/">SDK Documentation.</a>
+    <p>
+    <br>
+</tr>
+
+
+
+<!-- 3 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+        Elygh Thao, <br>
+        Yohanes Koeswono
+</td>
+<td>
+	<p><b><u>API: Real Time Pause</u></b></p>
+Our API supports Real Time Pause functionality that strategy games tend to have. Gives developers access to RTP Game Objects that have certain states that they enter 
+    depending on the situation. RTP Game Objects work with RTP States to work with whatever states users want to currently be in. For example: RTP Game Objects can enter a freeze state
+where the Game Object would be frozen or enter an attack state. Currently supports 3 kinds of inputs: Key Pressed, Key Clicked, and Commands.
+  
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1u04pvqHHdNr-sSioxOX1EEvaPymPQYv4c3zh99wCTNQ/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1qQxvZWwd_hmpjGUPmHEc9RwXYUXfTO3Ov8Izz0FDRBo/edit?usp=sharing">API Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1ed4GtuFVzLn195V-3wDQpDvsCNgvvzR5-u2wZ16Vk2c/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/13Oah7T88ouXGlqHzj207yG06I_XEbE2VhaI8DP0h9sg/edit?usp=sharing">Final Presentation</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+     <img border="0" src="https://drive.google.com/uc?id=1TXnC27JbcJihvTJyWk6i3nJD36s7353Z" width="250px"/>
+     <img border="0" src="https://drive.google.com/uc?id=1N5FD6jD1dJWELqd9s1N4KrrO1uobPvdU" width="250px"/>
+     <img border="0" src="https://drive.google.com/uc?id=1uolPoqh_ULUw4YNvY7sULNe8rpwNQl6c" width="250px"/>
+
+</p>
+    Links to: 
+    <a href="https://elyghthao.github.io/CSS452-Final-Project-API-Creation/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://yohanesk23.github.io">SDK Documentation.</a>
+    &nbsp &nbsp &nbsp
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 4  -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+        Jesse Sterchi, <br>
+        Nick Ryan, 
+</td>
+<td>
+	<p><b><u>API: Dialog System and Textboxes</u></b></p>
+Our module supports the display of customizable textboxes and the ability to control the flow of dialog. 
+Game developers are able to create TextRenderable objects, upload sets of dialog and display instructions as an array of Text objects, and manipulation the flow of the dialog using an instance of the Dialog class. Alternatively, game developers can implement their own conditions for triggering the dialog/moving forward in the dialog prompts.
+Without the addition of our module, the only way to show dialog was using the FontRenderable class. This did not allow for a way to display the desired text in a fitted box, keep track of which text should be displayed, set up a character image to go with the dialog, or easily change the flow of the dialog.
+  
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1NQpf24Zofcb2Soy-b39OpLakJMfcH3QDwqpKvkDU-QE/edit#slide=id.p">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1ik3BCW3cY2kHKgF9ZzIjwy_HeiOURxdc0sSb2j22RJA/edit">API Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1mG7pDSCaAoRjKPOa3KKv7R4Egi2urlpEJzGNbTi6RZI/edit">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/11aQ0t-GSgw-kODN3lwXK8H7sIKf6Uel-Uxeam69wF0k/edit">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+     <img border="0" src="https://drive.google.com/uc?id=1GXA4Sq9fXzbcVufLcYdMJjSK2o4itr4n" width="250px"/>
+     <img border="0" src="https://drive.google.com/uc?id=1e1lpjf9If5Fhz8HKgH4VIHA5mziJqxn6" width="250px"/>
+     <img border="0" src="https://drive.google.com/uc?id=1DPNAvWh-fl-wu1R2ixU7a0U2ki30HSBy" width="250px"/>
+	
+<br>
+    Images and some dialog from Resident Evil 4 by Capcom and Resident Evil VIllage <br>
+    Links to: 
+    <a href="https://jesseds441.github.io/FinalProject/FinalProject/">Demo of API</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSy--aZlZ5yYEl2sPVsXGpqXt1mbo4T31RTcADClF1CnmiRtp7iipC4vtEJrgTks3UzhMYQRTuqsBhe/pub">SDK Documentation.</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://dialogtutorial.jesseds.repl.co/">Tutorial</button></a></br>
+<p>
+<br>
+	</td>
+</tr>
+
+
+<!-- 5 -->
+<tr>
+<td style="vertical-align: center;">
+    <b>Developers</b><br>
+    Aman Swaroop <br>
+    Kuzey Gok <br>
+    Myles Dalton
+</td>
+<td>
+    <p><b><u>API Title: Projectile Systems</u></b></p>
+    Our module supports the creation of and general implementation of projectile systems.Our projectile
+            system will be an extension of the Game.Object class found in the game_objects file of the engine.
+            Our current game engine uses the Game.Object class to create projectiles. While this is possible, it
+            is a very lackluster and barebones implementation of a projectile. The game objects class was
+            created as a main class for any game object made in the game and cannot be considered a specialized
+            solution for projectile objects.
+    
+
+            <p><b>Prject Process:</b>
+                <a
+                    href="https://docs.google.com/presentation/d/1c5VP-JAWMIITS1bBwnKvYdEaeuHrffxbsaWlKNyMVcM/edit#slide=id.p">Functionality
+                    Survey</a>
+                &nbsp &nbsp
+                <a
+                    href="https://docs.google.com/presentation/d/1jA46Ej-qz7VqA6OvCdQ8XiSxu6hu6vmYxhPNW0tkPO4/edit?usp=sharing">Proposal
+                    Presentation</a>
+                &nbsp &nbsp
+                <a
+                    href="https://docs.google.com/document/d/1lJGwu99LCdLV41lDZw-hZQBLJrTldQIb4waiTSQ4Od8/edit?usp=sharing">Proposal
+                </a>
+                &nbsp &nbsp
+                <a
+                    href="https://docs.google.com/presentation/d/1TYGrOMTb9ypMx-LQMVkBvegih8-XkzoyJw3soz5UmUQ/edit?usp=sharing">Progress
+                    Demo</a>
+                &nbsp &nbsp
+            </p>
+
+            <!-- Up to 3 screen shots -->
+            <img border="0" src="https://drive.google.com/uc?id=1qa8QWw8kLUR1AWFXC_xv8Y6yJlihm25V" width="250px"/>
+            <img border="0" src="https://drive.google.com/uc?id=1HXCB66z74dm4OQArnckOeYMFVrL_XpbV" width="250px"/>
+
+            </p>
+            Links to:
+            <a href="https://amaswauw.github.io/final-project-452/">Demo of API</a>
+            &nbsp &nbsp &nbsp
+            <a href="https://amaswauw.github.io/final-project-452-documentation/">API documentation.</a>
+            <p>
+                <br>
+</td>
+</tr>
+
+
+
+
+
+
+
+<!-- 6 -->
+<tr>
+<td style="vertical-align: center;">
+  <p></p>
+  <b>Developers</b><br>
+  Nathan Miller<br>
+  Tyler Miller<br>
+</td>
+<td>
+  <p><b><u>Runtime Game UI</u></b></p> 
+  <p></p>
+  <p>
+    This application allows users to edit, run, and save game objects. 
+    Game object attributes that can be manipulated is size and position within a scene.
+    Users can also load their own game scenes to be edited in the window.
+  </p>
+  <p>Project Process: 
+  <a href="https://docs.google.com/presentation/d/173kae-uB6aXtTmjVZ6CcvDRyT4QWo_C_qOOP4bZZIZc/edit?usp=sharing">Functionality Survey</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://docs.google.com/presentation/d/1xIB8MhiLMX9IpZ5erdGp17h4wt7zK2-mDl6sEi-Vq3w/edit?usp=sharing">Proposal Presentation</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://docs.google.com/presentation/d/19VHAf5wt0TWAlq93694m5pqu8QEttlj5hiXXvcAK70o/edit?usp=sharing">Progress Demo</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://docs.google.com/presentation/d/1ewO8Sw3qhyL41D4lw7GLY9_fITl1o6lHtxn8Zm-lyB8/edit?usp=sharing">Final Demo</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  </p><p></p>
+
+  <img border="0" src="https://drive.google.com/uc?export=view&id=1IENLPjXU6h_9lm-3Ibg0F5BcabqXX_T3" width="400px">
+  <img border="0" src="https://drive.google.com/uc?export=view&id=1Q1A71rnOG2LezxYUzJSqtUzM55hWSp7d" width="400px">  
+  <!-- <img border="0" src="" width="300px"> -->
+  
+  <p> Links to:
+  <a href="https://funkeymonkey10.github.io/CSS452Demo/">Demo of API</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <a href="https://docs.google.com/document/d/1wQUrP8qR2ZJmEN6DOnKo59p5FiDrLCRop0B-BplRofI/edit?usp=sharing">API documentation</a>
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  </p>
+</td>
+</tr>
+
+
+
+<!-- 7 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+        Khushaal Kurswani, <br>
+        Jino Chai
+</td>
+<td>
+	<p><b><u>Turn-Based Engine</u></b></p>
+Our module provides the ability to support a game which has a turn-based system, where players take turns making decisions and seeing how said decisions impact the overall state of the game. It allows game developers to set up a turn manager that manages the turns for a set of players.
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1tP1E6YgZiNVFPK7u8s35MOTBsGX588jTJQhxgHVpY7o/edit?usp=sharing">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1hdiparyoEPGUCsOJun1vK1f3RIPC9HFQy4f8cp6ZGfY/edit?usp=sharing">API Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/1y2HNyQGZ3xwpmyGYSwG89WGWW1ZGqmv3rWDTMhza2jw/edit?usp=sharing">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1qMAMMt0E9-muipZ9OgAo3vCp2xtUprMvrV65s09oOAc/edit?usp=sharing">Progress Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+	<img border="0" src="https://drive.google.com/uc?id=1_yTRnuMGoVxaESWRrrBuQLkleJTiJ3kt" width="250px"/> 
+    <img border="0" src="https://drive.google.com/uc?id=1-rAT_G_WLNGj1vBUEkhovWbCatwTJvZk" width="250px"/> 
+
+
+</p>
+    Links to: 
+    <a href="https://khushaalkurswani.github.io/TurnBasedEngine/">Shooter Demo</a>
+    &nbsp &nbsp &nbsp
+	<a href="https://commotional.github.io/TurnBasedEngine-demo2/">Tic-Tac-Toe Demo</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://docs.google.com/document/d/e/2PACX-1vQOuTMceRmZhPcHy9zniF58DRq_C66CT0JVHWc8el1NfF00GIgI2mVh21pKWDyDHg1DnUw1e0m8idMB/pub">SDK Documentation & Tutorial</a>
+<p>
+<br>
+	</td>
+</tr>
+
+
+
+
+<!-- 8 -->
+<tr>
+<td style="vertical-align: center;">
+     <b>Developers</b><br >
+        Nicholas Martin, <br>
+        Brendan Frye, <br>
+        Antoinette Calkins
+</td>
+<td>
+	<p><b><u>API: API: Particle System Improvements</u></b></p>
+<i>Our improvement to the game engine’s particle system is to abstract the particle emitter into preset classes which support particle behaviors without requiring complex particle functions to be passed in to define behavior. 
+   <br> Users of this engine can define ambient and emitter based particles which have customizable features which make sense within the context of the particle type. Particles additionally can support hit based interactions such as termination upon impact with other objects.</i>
+  
+</p>
+
+    <p><b>Project Process:</b>
+	<a href="https://docs.google.com/presentation/d/1Vy_QqcHXy0itYGydESrYBV4fsJ7g5T2FuwpQoqXzgy0/">Functionality Survey</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1lc5HqC5ZX3h94MJo-IOMjclTQyKgUHPXSZkw0spguDU/">API Proposal Presentation</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/document/d/10CHpOSV6x5x-MxTgi7llosV6IbNKyPyha1XbzSSnLaI/">Proposal</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/1lnlExL1T-b4y09Rr9g9toMXp178AShu1b07XITH0Osw/">Progress Demo</a>
+    &nbsp &nbsp
+	<a href="https://docs.google.com/presentation/d/18DSafh7nmA9UQk4sP4XlghysC9tfYh8f7S9rvXoYLC8/">Final Demo</a>
+    &nbsp &nbsp
+</p>
+	
+	<!-- Up to 3 screen shots -->
+    <img border="0" src="https://drive.google.com/uc?id=1qpErix5l1lbNxZF-g5D-b2yxfc5rf47I" width="250px"/> 
+	<img border="0" src="https://drive.google.com/uc?id=1aVfw1DYYRha49Ohe3npGwO1IItOp_x3o" width="250px"/> 
+    <img border="0" src="https://drive.google.com/uc?id=10wgSv1FHh0P6-gy0baHRq220B2I5veBk" width="250px"/> 
+
+</p>
+    Links to: 
+    <a href="https://nmart510.github.io/ParticleSystem/index_second.html">Demo 1: Simon Says</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://nmart510.github.io/ParticleSystem/index.html">Demo 2: General API Demo</a>
+    &nbsp &nbsp &nbsp
+    <a href="https://nmart510.github.io/ParticleSystem/docs/">SDK Documentation.</button></a>
+<p>
+<br>
+	</td>
+</tr>
+
+
+
+
+</table>
+</body>
+</html>
