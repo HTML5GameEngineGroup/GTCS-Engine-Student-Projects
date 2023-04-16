@@ -1,0 +1,376 @@
+<html>
+
+	<head>
+		<title>Winter 2023: Extension APIs to the GTCS Game Engine</title>
+		<style type="text/css">
+		.auto-style1 {
+			color: #FF0000;
+		}
+		.auto-style2 {
+			text-decoration: underline;
+		}
+        .column {
+            float: left;
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .row:after {
+            display: table;
+        }
+		</style>
+	</head>
+
+<body>
+	
+<h2><b>Winter 2023 CSS452: 2D Game Engine Development. Final Projects</b></h2>
+
+    These are the final projects we developed during the last 
+    two weeks of 
+    <a href="https://myuwbclasses.github.io/CSS452/">CSS452 in Winter Quarter 2023</a> as 
+    ways to demonstrate our understanding of game engines, specifically, the
+	<a href="https://apress.github.io/build-your-own-2d-game-engine-2e/">
+	GTCS game engine</a> we have learned built during this class. 
+	<p><strong><span class="auto-style1">NOTE</span>: </strong>You should run 
+	the games using the<strong> <span class="auto-style2">Chrome web browser</span>.
+	</strong>Explore 11 does not support AudioContext and Mozilla Firefox (v 
+	39.0) does not support GLSL shaders and thus will not allow the games to 
+	run.</p>
+<hr>
+
+<table border="1" width="100%" bordercolor="#404040">
+
+
+
+<!-- 2 -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Abdul Naveed, <br>
+            Trent Lucas 
+</td>
+<td>
+	<p><b><u>API: Projectiles</u></b></p>
+    Our module supports the creation of easily implementable projectiles for the user to create. The definition of the projectiles of this API is they are moving objects which are bounded by a lifetime or a collision(supports multiple objects). The API provides an efficient method for users to implement projectiles into their games without sacrificing their ability to achieve completely personalized projectile behavior.
+
+Each projectile supports the ability to use sprite animation, object collisions, a lifetime, and end events by basic set functions available to the user. Every projectile is also defined by basic movement variables: position, gravity constant, point direction, velocity, acceleration, and rotational acceleration. All of these variables can be changed for the user to achieve the behavior they desire out of a projectile object.
+
+Our projectiles API was created using chapter 10.3 from the book Build Your Own 2D Game Engine, Second Edition.
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1yOcLudpS9yFNyGMezMXQVH3iYIsIRCTmjGqPNt8Tz6o/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1FB70LZSfbqcv-F_D_rxzfll3vtkm8TUvOfy-S2c4YkU/edit?usp=sharing">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1mJ66aFlZdyd2JhuqRGeKN07EZawpoCM6TJzk9FEN9kE/edit?usp=sharing">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWVjNTkzNWMyOGRhOGI5ZmI2NjkyZjcyN2U0ZmY3YTVjMTI4OGUwOSZjdD1n/N4xAuRlhqgrZdH4vbA/giphy.gif" width="350px"/>
+        <img border="0" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWY0YmFkNWNjZThlNTVlNWU1MjA5ZDg3Zjk2YjUwODk2YmEzNzY3MyZjdD1n/6TrKwTnLy7EBjQQqDs/giphy.gif" width="300px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://trentlucas.github.io/CSS452ProjectilesAPI/">Demo of API </a>
+        &nbsp &nbsp &nbsp
+        <a href="https://docs.google.com/document/d/1Gsg7pebm2DEsdZhaW31RuE7RhdlvocjOTbZfFCljfCY/edit?usp=sharing">SDK Documentation.</a>
+
+    </p>
+    
+        Assets Used:
+        <a href="https://www.freepik.com/premium-vector/pixel-art-farm-landscape-with-barn-mill-fence-trees-8-bit-game-background_30986517.htm">Background 1,</a>
+
+        <a href="https://stock.adobe.com/search?k=space+invaders+background&asset_id=390229338">Background 2,</a>
+
+        <a href="https://www.citypng.com/search?q=explosion+animation+png+image">Blue Fireball,</a>
+
+        <a href="https://opengameart.org/content/pixel-explosion-12-frames">Explosion,</a>
+
+        <a href="https://surfacetoash.itch.io/kaboom-explosives-asset-pack">Weapons,</a>
+
+        <a href="https://toppng.com/free-image/avgn-adventures-avgn-sprite-8-bit-character-PNG-free-PNG-Images_180720">Character</a>
+    <p>
+    <br>
+</tr>
+
+
+
+
+<!-- 4  -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Parth Gupta, <br>
+            Chandra Pandian 
+</td>
+<td>
+	<p><b><u>API: Normal Mapping + Lighting</u></b></p>
+    This module supports functionality for a developer to incorporate normal maps and lighting to textures, which enhances the illusion of depth and detail for the texture. In order to simplify the development process for the user, this module provides two classes which include LightSource and NormalMapRenderable. 
+
+Users can manipulate a variety of attributes of a LightSource such as position, color, intensity, and falloff. Users can create NormalMapRenderables and attach a texture, a normal map, and a set of lights to illuminate the renderable. 
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1ukIfanVix5DC9W1pDeXBLRfYU5fya3frOqSoepcDb9g/edit?usp=share_link">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/13a5bocGTP2VJs3s_wKysetJCoJUnjzoUibNiQZ0C628/edit?usp=share_link">API Proposal Presentation</a>
+        &nbsp &nbsp
+<a href="https://docs.google.com/document/d/1MvEkYObVZJHnwp6uo4Pokp_YNmNfHb0sQrfSy6tUDDI/edit?usp=share_link">API Proposal Document</a>
+        &nbsp &nbsp
+        <a href="https://parthgu.github.io/NormalMappingProgressDemo/">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <iframe src="https://drive.google.com/file/d/1SqhPvu252Mh9pQMd92UjEBlMDT-oyT5H/preview" width="300" height="250" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1nhHXOnFEVZaOsdVdBCQlIShzQrFGmQsU/preview" width="300" height="250" allow="autoplay"></iframe>
+        
+    
+    </p>
+        Links to: 
+&nbsp
+<a href="https://cpand2.github.io/">Demo 1</a>
+&nbsp &nbsp
+<a href="https://parthgu.github.io/NormalMappingDemo2/">Cops & Robbers Demo</a>
+&nbsp &nbsp
+ <a href="https://docs.google.com/document/d/1HNh6JeJz5wGNYc8mAhgJhYCdzXA8NU0TLrtdUluRIR8/edit?usp=share_link">SDK Documentation & Tutorial</a>
+    <p>
+    <br>
+</tr>
+
+
+
+
+
+
+
+
+<!-- 6 -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Peter Chen, <br>
+            Martin Matsudaira, <br>
+            Jonathan Robinson 
+</td>
+<td>
+	<p><b><u>API: Dialogue System</u></b></p>
+    Our module supports the generation of moddable, RPG like, dialogue text boxes similarly seen in games such as Fire Emblem. Developers using our API will be able to create text, 
+    characters, and custom text boxes. Along with those features, the developer will also have the ability to modify text scrolling, text color, text audio, and sprite animation.
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/11nJVh49vVaXujKMdUIeuD9xbmi0NTYNMkPrC5Y7_qOc/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1IvyMZNYhS25T8aqwdYHL_Ofh8fzaN4HCfxTXm9cwtXc/edit?usp=sharing">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1PRAj6YfSBd2DDDjltSes0jLkcKkjkz_ZMGsxtO8H3_k/edit?usp=sharing">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://drive.google.com/uc?id=145Rh5zQgBgT97nr29F1zJx3Caa2GQkyj" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=16b6dEMrBS2y9LA03oY_pNELA2ZsL87g1" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=1DSlo18PXGHdT0OHed-MJsVB8tJwPL7xq" width="250px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://nausniboar.github.io/nausniboar/">Demo of API </a>
+        &nbsp &nbsp &nbsp
+		<a href="https://drive.google.com/file/d/1Ym3_TD6G29Km6-s_eNlYqocQ4_23-aoZ/view?usp=share_link">Demo 2 of API </a>
+        &nbsp &nbsp &nbsp
+        <a href="https://docs.google.com/document/d/1kn6MhD9UeQihkk_dJyXvo3fuFgdoxGSGu8cn3tneW1w/edit?usp=sharing">SDK Documentation.</a>
+    <p>
+    <br>
+</tr>
+
+
+<!-- 1 
+-->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Brandon DeGuia, <br>
+            Pranshu Bhardwaj, <br>
+            Tony Le
+</td>
+<td>
+	<p><b><u>API: (Multi) Controller Support</u></b></p>
+    Our module supports the use of 1-4 controllers as an alternate input system for game engine inputs.
+
+    The user can query the game engine for boolean inputs of all buttons on the controller, plus a coordinate map for each of the two joysticks, describing its position from (-1, -1) to (1, 1).
+    
+    Queries are also based on a given index, so the user can query for button A on controller 2, for example. This allows the user to create local multiplayer games using controller inputs.
+
+    NOTE: ONLY standard XBox controller layout is supported for this API.
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1Q20qsr5Da1yrMO8DUcVRIIZGglb6bodttd1xOCkBD4o/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1JUsHn9LTHJSmsUpsY3l9y9x-hkgtOuHr2gv_Sy4dKsM/edit?usp=sharing">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1tOvl08iCskDwCfq9rgBw-nE72h4aN9rLtbBmvXkQahM/edit?usp=sharing">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://drive.google.com/uc?id=1Baj4KFIFCQK12UCBbGYxLIvOExZs3cl6" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=1ik_AblBcnu8fdlsicNQ-5WiWE7tzHkfV" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=1D1hx8ldPRmenprFIPdHxrR3wFI9Dsm-t" width="250px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://btdeguia.github.io/CSS452Proj/">Demo of API (Single Controller)</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://btdeguia.github.io/CSS452ProjFinal/">Demo of API (4-Player Pong)</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://github.com/btdeguia/CSS452ProjFinal">SDK Documentation.</a>
+    <p>
+    <br>
+</tr>
+
+<!-- 7 -->
+
+
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Justin Seo, <br>
+            Po-Lin Tu 
+</td>
+<td>
+	<p><b><u>API: Weather System</u></b></p>
+    Our module is an API that helps the game developers to create weather systems in their 2D games. Specifically, our module allows the developers to define certain weathers and then activate them later to create visual effects on the screen for their games. 
+
+    The weather effects that appear have defined behaviors, which the developers can alter in certain ways. The parameters that define behaviors can be adjusted by setter methods of our API. The textures that are used to create these weather effects, such as sunshine and clouds, are given by the developers upon weather creation.
+    
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1_2qDYTPvQ-xMF83VAVp9v9DZBQpgelArUsjCHI21UUE/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/document/d/1UTcB_dK1NpfCHBk51APzpTxt8eQTKSMbXoWPIV8AKFE/edit?usp=sharing">API Proposal</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <iframe src="https://drive.google.com/file/d/1PN3qvwkKaQLt4tE-MiphJx5y1eBJASQ-/preview" width="333" height="250" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/1YDHM8y4SNhF-1JgW6mdM2xfBK1Z_8Qgj/preview" width="333" height="250" allow="autoplay"></iframe>
+        <iframe src="https://drive.google.com/file/d/18_6I2u18i51Q3yG2LiZsxzxu0XjQXofz/preview" width="333" height="250" allow="autoplay"></iframe>
+    
+    </p>
+        Links to: 
+        <a href="https://loer9999.github.io/C_S_S_4_5_2_FinalDemoHosting/">Demo of API </a>
+        &nbsp &nbsp &nbsp
+        <a href="https://docs.google.com/document/d/1aT6M0TQ97XJb5_42Lo4LQDgCjeInnQ66v5B5X0jGr0I/edit?usp=sharing">SDK Documentation.</a>
+    <p>
+    <br>
+</tr>
+
+
+<!-- 3 -->
+
+
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Trevor Nguyen, <br>
+            Mikhail Ermolenko, <br>
+            Ani Rao <br>
+</td>
+<td>
+	<p><b><u>API: Map Editor</u></b></p>
+    Our API supports creating a map based editor scene.
+
+    The map supports storing textures in each coordinate as a tile or an object, and allows the user to manipulate the map through adding, removing, or moving objects or tiles. Our module utilizes 2 new classes: MapGrid and Tile. MapGrid allows the user to initialize and create a data structure to store the map, while tile extends texture renderable to allow manipulation of tiles.
+    
+    The current game engine doesn’t support an easy way to create a map. While the user can create texture renderables to create a map grid, the user doesn’t have a way to manipulate specific texture objects, or have each object interact with each other without extensive coding. Our module allows ease of use on defining a space to manipulate, storing and placing objects, and interactions between objects in the map. Below describes a diagram of our current API.
+    
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/14Mshq5yUwnZX8x3GIvey60agdV5YS6CyBP97KCeMScQ/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1osBYDcet-dmRy89GAxk9_ju-Ha30es7fpW6h8h7NSMo/edit?usp=sharing">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1CV92d1azLPW0fY46lOLy5Ul4E2oyYodDGQQ2LiGH27M/edit?usp=sharing">Progress Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1m5Z1BXHJWkmkXPpPjAW_2uWwotOcVYmk9ooNv8GHmI0/edit?usp=sharing">Final Presentation</a>
+        &nbsp &nbsp
+        
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://drive.google.com/uc?id=1FKykWjHPAlUe-m_IqaMgbMJ-4UmOAZPx" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=1wqQI6JA1SeFGlRNDInKEroCMExX_7ypu" width="250px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://docs.google.com/document/d/1Cdz1nTLGIMDtjJ-JDD3APiOHzRhJiQjXkhj8vWp_Kic/edit?usp=sharing">SDK Documentation.</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://trevorngu.github.io/452-Final-Project/">Demo1</a>
+        &nbsp &nbsp &nbsp
+        <a href="https://mikhail10920.github.io/CSS452FinalProject/">Demo2</a>
+    <p>
+    <br>
+</tr>
+
+
+
+
+<!-- 5 -->
+<tr>
+<td style="vertical-align: center;" width="15%">
+     <b>Developers</b><br >
+            Jason Nguyen, <br>
+            Gerel Pasag,  <br>
+	 Noa Uritsky 
+</td>
+<td>
+	<p><b><u>API: Automatic Scrolling Landscape</u></b></p>
+Our API project supports the creation of an illusion of an infinite moving background using multiple layers of images and/or assets. Each layer is independent from others in the way that the scrolling speed is unique and creates an immersive and interactive imagery of a moving content. Images/assets that are moving slower and layered further back will appear as though they are far from the viewer, while those moving faster and layered more front will appear closer.
+
+Some of the functionality that our API supports includes the ability (for the user) to set the image/assets, scrolling speed, direction, and size of any image/assets. There is also the freedom for the user to be able to create as many layers as they want. This is done by creating a new Background class that allows the user to create multiple layers of automatically moving objects. The current engine has some support for parallax effects, but does not have implementation or support for automatic scrolling effects.
+
+    </p>
+    
+        <p><b>Project Process:</b>
+        <a href="https://docs.google.com/presentation/d/1BB6tGJ4zbvcy2daP-PF3885fOF7_80w5LbbSCjlr1Pw/edit?usp=sharing">Functionality Survey</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1ZLHraVUM3Z5KPjXTg00H7YygBVfwHT2vdjyOXAVQ9A8/edit?usp=share_link">API Proposal Presentation</a>
+        &nbsp &nbsp
+        <a href="https://docs.google.com/presentation/d/1MuxRU0JVqEFvxYd9SyQUXlw9oykel66hkB9c88QUfCY/edit?usp=share_link">Progress Demo</a>
+        &nbsp &nbsp
+    </p>
+        
+        <!-- Up to 3 screen shots -->
+        <img border="0" src="https://drive.google.com/uc?id=1B5ZJOgU6l56va50C9wAwTYRwLpxf3GyL" width="250px"/>
+        <img border="0" src="https://drive.google.com/uc?id=11o4caJeiv2SEFaecguzdHa26CWC0agl0" width="250px"/>
+        
+    
+    </p>
+        Links to: 
+        <a href="https://webglosers.github.io/ScrollingLandscape/">Demo of API </a>
+        &nbsp &nbsp &nbsp
+        <a href="https://docs.google.com/document/d/1Gdfel5fZyIW_dCyxmWRLAK25tEzhoDLEVJKOHMj6DbU/edit#">SDK Documentation.</a>
+    <p>
+    <br>
+</tr>
+
+
+
+
+</table>
+</body>
+</html>
