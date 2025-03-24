@@ -1,0 +1,553 @@
+
+<html>
+
+<head>
+    <title>COMP561405：游戏设计与开发 </title>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FF0000;
+        }
+
+        .auto-style2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2><b> 西安交通大学 计算机学院 2025 第二学期<br/>
+           COMP561405：游戏设计与开发 <br/>
+           </b><br />
+     Introduction to 2D Game Development 
+    <br />
+    Final Games</h2>
+    <hr />
+    <p>
+        These are the final games we build over a two-week peroid at the 
+        <a href="https://www.xjtu.edu.cn/"> 
+            西安交通大学 （Xian JiaoTong University, XJTU)</a> 
+        <a href="http://www.cs.xjtu.edu.cn/"> 
+            计算机学院 (School of Computer Science)</a>.
+        Thrid-year students from the department
+        overloaded this class on top of their regular full load, 
+        where they had no background in videogame development.
+       In this course, we learned about game engine programming model, 
+       the ECS (Entity Component System) pattern, 
+       modeling simple autonomous behaviors with finite state machine. 
+       After that, students propose, design, 
+       prototype, and build the games of their choices.
+       Along the way, we play tested and provided review feedback to each other.
+    </p>
+
+    <hr>
+
+<table border="1" width="100%" bordercolor="#404040">
+    <!-- 9 7 1 5 2 3 8 4 6 -->
+    <! ---- 9 ----!>
+<tr>
+    <td align="center" style="text-align:left;">
+            
+      <br/>
+      <p></p>
+      <b>Developers</b></br>
+      吴夏天 WU XIATIAN<br/>
+      王晁 WANG CHAO<br/>
+      姜宇骋 JIANG YUCHENG<br/>
+      裴一丰 PEI YIFENG<br/>
+    </td>
+    <td>
+      <p><b><u>Touhou: Kosuzu's Adventure<br/>
+        东方: 小铃奇闻
+    </u></b></p> 
+      <p>
+        As the daughter of the rental bookstore in Gensokyo, Kosuzu Motoori, you hear from your good friend Hieda
+         no Akyuu that she has found a very interesting book. You are about to go and meet up with her, but as you
+          walk along the familiar route, something gradually seems off. When you come to your senses, you find yourself
+           in a castle. There, you will encounter the legendary great sage of Gensokyo, gain a mysterious power, and go
+            through many adventures, trying to solve the mystery of your friend's disappearance...
+      </p>
+      <p>
+        你作为幻想乡租书店里的女儿本居小铃，从好友稗田阿求那里听说找到了一本很有趣的书，正要前去与好友汇合，
+        可沿着熟悉的路线走啊走，逐渐变得不对劲起来，回过神来竟到了一座城堡里。在那里，你将遇到传说中幻想乡的
+        大贤者，获得奇妙的能力，经历重重冒险，试图解开好友失踪的谜题……
+
+      </p>
+      <p>
+        <a href="https://ericmegalovania.github.io/Touhou_Kosuzus_Adventure/Gameproposal.pdf">Game Pitch</a>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://ericmegalovania.github.io/Touhou_Kosuzus_Adventure/index.html">Click to Play</a>
+        &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://ericmegalovania.github.io/Touhou_Kosuzus_Adventure/EXE.zip">EXE Download</a><br/>
+        <p></p>
+      <div  style="width:900px;overflow:hidden;">
+        <iframe style="z-index:100;width:560px"id="bili-radio"
+            src="https://player.bilibili.com/player.html?isOutside=true&bvid=BV1YJQBYNEd2&cid=1475379874&page=1&high_quality=1"
+            scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> </iframe>
+        
+        <script>
+            document.getElementById("bili-radio").style.height = document.getElementById("bili-radio").scrollWidth * 0.76 + "px";
+        </script>
+    </div>    
+      
+
+
+      <img style="border:0"src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Menu.9kgc7e4bpo.webp" width="300px"/>
+      <img style="border:0"src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/BiSiWuXiaTian.1e8rgwtr2t.png" width="300px"/>
+      
+      
+      <img style="border:0"src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Portal.491fmoi91p.webp" width="300px"/>
+      <img style="border:0" src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Portal-2.b926078ef.webp" width="300px"/>
+      <img style="border:0" src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Boss.2douu25tfs.webp" width="300px"/>
+      <img style="border:0" src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Cloud.73u3sgxft6.webp" width="300px"/>
+      <img style="border:0" src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Lockpick_1.8vn2n4ov9j.webp" width="300px"/>
+      <img style="border:0" src="https://github.com/EricMegalovania/picx-images-hosting/raw/master/Touhou_Kosuzus_Adventure_Screenshots/Lockpick_Last.3uuzvki0qz.webp" width="300px"/>
+                  
+  <br/>
+    <b>Resources we used are from</b>: 
+    <br/>&nbsp; https://itch.io/c/5505623/yeyin333s-collection
+    <br/>&nbsp; https://opengameart.org/
+    <br/>&nbsp; https://www.spriters-resource.com/mobile/touhoulostword/?source=genre
+
+  <br/>
+    <b>Music we used are from</b>: Touhou Project
+  <br/>
+    <b>Games that inspired us</b>:
+    Touhou Project, Portal, Titan Fall II, I Wanna Lockpick
+    <p>&nbsp;</p>
+    </td>
+  </tr>
+  
+    <! ---- 7 ----!>
+    <tr>
+    <td align="center" style="text-align:left;">
+      
+      
+      <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/player.png" width="122px" /><br/>
+      <p></p>
+      <b>Developers</b></br>
+      彭雍媛(Peng Yongyuan) <br/>
+      <br/>
+      李佳仪(Li Jiayi)<br/>
+      <br/>
+      张逸涵(Zhang Yihan)<br/>
+      <br/>
+    </td>
+    <td>
+      <p><b><u>坠入梦境Falling Dream</u></b></p> 
+      <p> 
+当梦境与现实交织，一段关于记忆与真相的旅程悄然展开。《坠入梦境》带你穿越四个独特的关卡，每一处都藏着被时光掩埋的故事。唯有触发所有隐秘的剧情线索，才能拼凑出完整的真相。  
+第一关，你不小心打碎了妈妈的花瓶，碎片散落在家中的每个角落，每一片都承载着家庭成员的回忆；第二关，你与父亲并肩坐在夕阳下，余晖中隐藏着他未曾诉说的过往；第三关，你踏入一片神秘的森林，未知的秘密在树影间若隐若现；第四关，一条蜿蜒的路隐喻着人生的轨迹，带你直面内心最深处的答案。  
+在跳跃与探索中，感受亲情的温度与人生的重量，坠入梦境的深处，揭开那层被遗忘的面纱。  
+        </p>
+          <p>
+When dreams and reality collide, a journey of memory and truth begins. FallingDream takes you through four unique levels, each hiding stories buried by time. Only by unlocking every hidden clue can you piece together the full picture.  
+In Level 1, you accidentally shatter your mother’s vase, scattering fragments that hold your family’s memories. Level 2 finds you sitting with your father under the sunset, where the fading light reveals his untold past. Level 3 leads you into a mysterious forest, its shadows concealing secrets waiting to be uncovered. Finally, Level 4 unfolds as a winding path, a metaphor for life’s journey, guiding you to confront the answers within.  
+Jump, explore, and feel the warmth of family and the weight of life as you fall deeper into the dream, uncovering the truth that lies beneath.
+      </p>
+       <p><!-- 相关链接 -->
+                    <a href="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/3_falling dream.pptx">Game Pitch</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="https://earnest-sunburst-a93821.netlify.app/">Click to Play</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+        </p>
+        <p></p>
+    <!-- 视频预览 -->
+                <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114210730279861&bvid=BV1xqXYYGEuF&cid=29026222140&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="560" height="340"></iframe>
+<p></p>
+                <!-- 游戏截图 -->
+                <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/menu.png" width="300px"/>
+               <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/vase1.png" width="300px"/>
+               <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/vase2.png" width="300px"/>
+        <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/word.png" width="300px"/>
+        <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/sunset1.png" width="300px"/>
+        <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/sunset2.png" width="300px"/>
+        <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/forest1.png" width="300px"/>
+        <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/forest2.png" width="300px"/>
+        <img border="0" src="https://raw.githubusercontent.com/makabakamak/falling-dream.github.io/main/forest3.png" width="300px"/>
+         <p>&nbsp;</p>
+            </td>
+        </tr>
+    
+    <! ---- 1 ----!>
+    <tr>
+        <td align="center" style="text-align:left;">
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQR6j0P32mItQ7EnNrVLD2m4AQNBH8ykA58oGU2d67e8mLc?width=1024" width="256px" height="auto" />
+          <p></p>
+          
+            
+          <h2>Developers</h2>
+          <i>
+          Cheng Yuan（程远）<br/>
+          <br/>
+          Wu Wenzheng（吴文正）<br/>
+          <br/>
+          Han Peiting（韩霈霆）<br/>
+          <br/>
+          Li Zizhen（李梓臻）<br/>
+            </i>
+        
+        </td>
+        <td>
+
+          <p><b><u>Stack & Overflow</p></b></u>
+            <p>This is a <strong>2D platformer</strong>—but with a <strong>challenging twist!</strong> Make strategic use of the game’s mechanics, navigate from the starting point to the goal in each level, progress through the story, and help the protagonist escape!</p>
+            Our protagonist is a retro system enthusiast. One day, he wakes up to find himself trapped inside an old and chaotic software system, where the design is a mess and space is extremely limited. To escape, he must communicate with system maintainers, locate the system kernel, and repair the system. Due to the system's instability, the protagonist can only perform limited actions, and every move he makes could impact his surroundings.</p>
+        
+            <b>Core Mechanics:</b>            
+            The protagonist must manage a <strong>stack-like memory space</strong>. Every action—moving, jumping, sneaking, or sprinting—is pushed onto the stack. When the action stops, it is popped from the stack.
+        <br\>
+            Because of the <strong>Last-In, First-Out (LIFO)</strong> nature of the stack, actions will only stop in reverse order—later actions must be popped before earlier ones can be removed!
+        
+            <ul>
+                <li>The stack also stores <strong>map data</strong>. If too many actions are performed, the stack may <span class="highlight">overflow into the "Yellow Zone,"</span> causing certain map tiles to <strong>appear or disappear!</strong></li>
+                <li>If too many simultaneous actions cause the stack to <span class="highlight">overflow into a critical "Red Zone,"</span> you will <strong>immediately lose the game!</strong></li>
+            </ul>
+        
+          <a href="https://1drv.ms/p/c/f8ced07ca72d17ce/IQTN_4-VmE_bSIosUtxwDZSKAecSzoIP0-4Iw5v_pIkJok8">Game Pitch</a>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <a href="https://pan.baidu.com/s/1klMvTMlakdrjYZwBwi9LrQ?pwd=1578">Click to Download exe</a>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <!-- <a href="3/en_printed.pdf">Booklet (EN)</a>
+          &nbsp; &nbsp; &nbsp; &nbsp;
+          <a href="3/zh_full.pdf">Booklet (CN)</a> -->
+          <br/>
+          <p/>
+        
+            <iframe src="https://1drv.ms/v/c/f8ced07ca72d17ce/IQS3bzKIpAT4QIvLCHzUEH2cAVUUBe6tOrCgZO4Dy2p_xUk" width="560" height="350" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            <p/>
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQQgyTmV8JVNRKgsk0De5q0bAVdWY-8gZHEMcrgw86ROa4E?width=256" width="256" height="auto" />
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQQltrZjaPXnQ4kF3rMLFK7jAVDg0iMX3u4MQ-sfY6R8dDk?width=86&height=80" width="86" height="80" />
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQSOLEfOZRX5Rr58K_iqkhPwAdnmEbSjF-9ZuRewbiF7FT8?width=256" width="256" height="auto" />
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQQBk4qZSoXiSZMjtbsTAK17Ad4WB799JR1xUPUBL1IQzUk?width=256" width="256" height="auto" />
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQTYJZ73RQQCSrd_-uMIZuFrAQb1DFwLuBCWkOpDQp_QXEM?width=256" width="256" height="auto" />
+            <img src="https://1drv.ms/i/c/f8ced07ca72d17ce/IQRawoKmLeGBSr-7KhA3XX3pARr35g7f-1kn9wAya1kRXvo?width=256" width="256" height="auto" />
+        
+            <h2>Credit</h2>
+            Credit for this game:<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;Background music and most sound effects are from the paid soundtrack of <i>Baba is you</i>.<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;Some sound effects are from <i>Ace Attorney</i>.<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;Some map textures are from <i>Minecraft</i>.<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;Some background images and character illustrations were created by <i>OpenAI</i>.<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;Some code was generated by <i>GitHub Copilot</i>.<br>
+            &nbsp; &nbsp; &nbsp; &nbsp;The in-game font is from the open-source GitHub repository <i>TakWolf/fusion-pixel-font</i>.<br>
+            <b>All these are for class project use only. Commerical use is prohibited until these contents above are replaced by original ones.<br/></b>        
+            <p>&nbsp;</p>
+        </td>
+          </tr>
+    <! ---- 5 ----!>
+    <tr>
+    <td align="center" style="text-align:left;">
+      
+      
+      <img border="0" src="https://github.com/ZSYTurbo/picx-images-hosting/raw/master/封面.45uj3s1ol.webp" width="122px" /><br/>
+      <p></p>
+      <b>Developers</b></br>
+      Gao Mingrui（高明睿）<br/>
+      <br/>
+      Zhang Shengyao（张圣尧）<br/>
+      <br/>
+      Lu Xuanyu（陆宣羽）<br/>
+      <br/>
+      Tian Yuze（田雨泽）<br/>
+      <br/>
+      Wang Yiyun（王奕匀 美术指导）<br/>
+    </td>
+    <td>
+      <p><b><u>FrostBonds:Whispers of Whitespeak</u></b></p> 
+      <p>
+           This is a platform-jumping adventure game. The story is set in the distant continent of Carosia, starting from a small perspective. Players immerse themselves in the game as Claire, the younger sister, and experience a tale of deep sibling affection.The characters have the abilities to dash and climb walls, which can deal with complex terrains. The game does not have fighting scenes, aiming to provide players with a pure platform-jumping experience. The game's art style is clean and warm, without any scenes involving blood or horror.For any inquiries, please contact us at 1965063381@qq.com or 541132457@qq.com.Moreover,thanks to Wang Yiyun for her guidance in the field of fine arts.
+      </p>
+      <p>
+      <a href="https://pan.baidu.com/s/1fwpogSq4jWPeI8y8FZ5Wow?pwd=hkda">Game Pitch</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="https://pan.baidu.com/s/1qb0j1sKge6yhLxoGRKR4mA?pwd=9tf9">EXE Download</a><br/>
+      <p></p>
+      
+      <!-- <iframe src="https://www.bilibili.com/video/BV1X8QhY5Eur/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=5dcdb68a718984c7f7d8b47b6b220354" width="750" height="500"></iframe> -->
+      <p></p>
+      
+      <iframe 
+            src="https://player.bilibili.com/player.html?isOutside=true&bvid=BV1X8QhY5Eur&cid=1475379874&page=1&high_quality=1" width="560" height="350"> </iframe>
+            <br/> <br/>
+      <img border="0" src="https://github.com/ZSYTurbo/picx-images-hosting/raw/master/show5.41y7zs32bb.webp" width="300px"/>
+      <img border="0" src="https://github.com/ZSYTurbo/picx-images-hosting/raw/master/show4.1e8rpfa0z1.webp" width="300px"/>
+      <img border="0" src="https://github.com/ZSYTurbo/picx-images-hosting/raw/master/show3.2obovqs09x.webp" width="300px"/>
+      <img border="0" src="https://github.com/ZSYTurbo/picx-images-hosting/raw/master/show2.4g4nqnbd5r.webp" width="300px"/>
+      <img border="0" src="https://github.com/ZSYTurbo/picx-images-hosting/raw/master/show1.1ovlikp93r.webp" width="300px"/>
+
+    <p>&nbsp;</p>  
+    </td>
+  </tr>
+  <!-- 2 -->
+    <tr>
+    <td>
+      <h2>Developers</h2>
+        王一霖 Wang Yilin<br/>
+        章圣达 Zhang Shengda<br/>
+        陈思含 Chen Sihan<br/>
+        严昕瑶 Yan Xinyao<br/>
+    </td>
+    <td>
+    <p><b><u>Prank Master</p></b></u>
+        <p>Initially, we need to press our leftshift for double times<br>
+                   Game Start!<br>
+                   We will notice a door<br>
+                   Use your left and right arrow or A and D and Space
+                   to enter the door<br>
+                   Oh,if you are "dead"<br>
+                   You can press the R to restart,
+                   press the L to go back to the last one,
+                   press the N to go to the next one,<br>
+                   Good Luck!<br>
+                </p>
+                
+                <a href="2/Final_EXE.zip" download>EXE Download</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://bcnz1ik2g507.feishu.cn/wiki/V6vTwNsEcioWNXkze5wc3ndMnqb?from=from_copylink" target="_blank">Proposal presentation</a>
+    <br/>
+    <br/>
+                <iframe src="https://www.youtube.com/embed/iTMCTDv7F2A"
+                border="0" 
+                frameborder="0" 
+                width="560px" height="350px"
+                framespacing="0" 
+                allowfullscreen="true"
+                >
+                </iframe>
+            <br/>
+            <br/>
+            
+            <img src="2/image/Pic1.png" width="300px">
+        
+            <img src="2/image/Pic2.png"  width="300px">
+        
+            <img src="2/image/Pic3.png"  width="300px">
+        
+            <img src="2/image/Pic4.png"  width="300px">
+        
+            <img src="2/image/Pic5.png"  width="300px">
+        <p>&nbsp;</p>
+    </td>
+    </tr>
+            
+    <! ---- 3 ----!>
+    <tr>
+    <td align="center" style="text-align:left;">
+      
+      
+      <img border="0" src="file:3/Pictures/5.png" width="122px" /><br/>
+      <p></p>
+      <b>Developers</b></br>
+      Li Yibo（李奕博）<br/>
+      <br/>
+      Zhang Shengqi（张晟祺）<br/>
+      <br/>
+      Liu Tianyi（刘添毅）<br/>
+      <br/>
+      Yang Zihang（杨子航）<br/>
+    </td>
+    <td>
+      <p><b><u>MerLin</u></b></p> 
+      <p>
+        Embark on a Magical Adventure with Merlin!
+
+        In Merlin’s Quest, you take on the role of Merlin, a old magician on a journey to master the art of elemental magic. Explore diverse and treacherous landscapes, from enchanted grassland to ancient desert, solving puzzles and battling foes along the way. 
+        Harness powerful elemental spells—combine fire, water, earth, and air to create unique magic effects and overcome challenges. 
+        With strategic spellcasting and skillful movement, craft your own path to magical mastery. Will you conquer the trials and unlock the secrets of the arcane?<br/><br/>
+      <a href="https://stuxjtueducn-my.sharepoint.com/:p:/g/personal/107386162_stu_xjtu_edu_cn/EWRt_1nGBb9LpaPtFA0Pm08Bt9iMOaT9UDvXj8PTTdzUqA?e=gWUX7X">Game Pitch</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="https://github.com/YiboLi-4110/Merlin.github.io/releases/tag/name">Click to Download EXE</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <br/><p></p>
+      
+      <iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114177309935977&bvid=BV1i5QBYBEwg&cid=28913632791&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"width="560" height="350"></iframe>
+      <p></p>
+      
+      <img border="0" src="file:3/Pictures/0.png" width="300px"/>
+      <img border="0" src="file:3/Pictures/1.png" width="300px"/>
+      <img border="0" src="file:3/Pictures/2.png" width="300px"/>
+      <img border="0" src="file:3/Pictures/3.png" width="300px"/>
+      <img border="0" src="file:3/Pictures/4.png" width="300px"/>
+<p>           
+   <b>CREDIT</b>:Our game materials are provided by AI and search engines, and we are grateful to the original creators for their work.<br/>
+        &nbsp; tilesets: https://scrabling.itch.io/pixel-isometric-tiles <br/>          
+        &nbsp; trees: https://gametoolkit.itch.io/top-down-forest-tileset<br/>  
+        &nbsp; elements: https://github.com/Azanor/thaumcraft-beta<br/>
+        Thanks for playing Merlin’s Quest! We hope you enjoy the game.
+      </p>
+      <br/>
+    </td>
+  </tr>
+    
+    
+    <! ---- 8 ----!>
+    <tr>
+    <td align="center" style="text-align:left;">
+      
+      
+      <img border="0" src="8/logo.png" width="122px" /><br/>
+      <p></p>
+      <b>Developers</b></br>
+      Xie Yukun（谢宇焜）from  XJTU<br/>
+      <br/>
+      Zhu Yuquan（朱昱全）from XJTU<br/>
+      <br/>
+      Bai Yunchen（白云程） from XJTU<br/>
+    </td>
+    <td>
+      <p><b><u>Nightmare Apocalypse</u></b></p> 
+      <p>
+          Dive into Nightmare Apocalypse, a haunting 2D dark fantasy RPG set in the eerie corridors of Xi'an Jiaotong University. You play as an ordinary sophomore who, after pulling an all-nighter to meet a deadline, leaves the library at midnight, only to collapse into a chaotic dreamscape. As you awaken in this twisted realm, a chilling revelation strikes: you’ve stumbled into a nightmarish dimension forged from the collective fears of your fellow students.
+To escape and return to your dorm for some much-needed sleep (because, let’s face it, you’ve got an 8 a.m. class), you must battle through surreal landscapes, confront terrifying bosses born from the darkest corners of the human psyche, and unravel the mysteries of this cursed dreamworld.
+Will you conquer the nightmares and make it back in time for your morning lecture? Or will you be trapped forever in the abyss of the Nightmare Apocalypse? The choice—and the survival—is yours.<br>
+   <br>
+<b>Instructions:</b><br>
+
+&nbsp; &nbsp;<b>Enter</b>: Start the game &nbsp;&nbsp;<b>P</b>: Quit the game &nbsp;&nbsp;<b>R</b>: Restart the game<br>
+
+&nbsp; &nbsp;<b>A</b>, <b>D</b>: Move left and right &nbsp;&nbsp;
+           <b>Space</b>: Jump &nbsp;&nbsp;<b>J</b>: Attack
+           &nbsp; &nbsp;<b>Q</b>: Switch between ranged and melee attack modes<br>
+
+&nbsp; &nbsp;<b>E</b>: Use to attempt teleportation when certain items are collected
+&nbsp; &nbsp;Boss Level (Level 2): Press <b>I</b> to invert gravity<br>
+      </p>
+      <p>
+      <a href="8/jieshao.pptx">Game Pitch</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="8/Nightmare Apocalypse.zip">EXE Download</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <br/><p></p>
+
+<!--      
+ <iframe width="560" height="340"  <iframe width="560" height="340" src="https://www.bilibili.com/video/BV1rPQBYLE7X/?vd_source=2851d80fd4a5ec33f895aa7bd82043e9" frameborder="0" allowfullscreen></iframe>
+ -->
+ 
+ <iframe 
+            src="https://player.bilibili.com/player.html?isOutside=true&bvid=BV1rPQBYLE7X&cid=1475379874&page=1&high_quality=1" width="560" height="340"> </iframe>
+            
+      <p></p>
+      
+<img border="0" src="8/img/1.png" width="300px"/>
+<img border="0" src="8/img/2.png" width="300px"/>
+<img border="0" src="8/img/3.png" width="300px"/>
+<img border="0" src="8/img/4.png" width="300px"/>
+<img border="0" src="8/img/5.png" width="300px"/>
+<img border="0" src="8/img/6.png" width="300px"/>
+    <p>&nbsp;</p>  
+    </td>
+  </tr>
+    
+    
+    <! ---- 4 ----!>
+    <tr>
+    <td align="center" style="text-align:left;">
+        <p></p>
+        <b>Developers</b></br>
+        Hu Wenbo（胡文博）<br/>
+        <br/>
+        Tian Zimu（田子牧）<br/>
+        <br/>
+        Zhou Zhenliang（周振亮）<br/>
+        <br/>
+        Jiang Haocheng（蒋浩成）<br/>
+    </td>
+    <td>
+        <p><b><u>Who_What_Where</u></b></p> 
+
+        <p>        你掉入了一片未知的世界，记忆也随之消失了。你只有不断前行，才能恢复自己的记忆，找回自己的身世。在前进的路途中，你将遇到许多困难，面对许多挑战，遵循你的直觉，出发吧!<br>
+        You have fallen into an unknown world, and your memory has vanished. The only way to regain your memories and uncover your identity is to keep moving forward. Along the way, you will encounter numerous obstacles and face many challenges. Follow your instincts and embark on your journey!
+        </p>
+
+       <p><b>按键 / Controls</b>:<br>
+        W, A, D: 控制跳跃，左移，右移/Move left, right, and jump<br>
+        P: 跳关 / Skip level<br>
+        I: 查看按键信息 / View key info<br>
+        鼠标左键: 攻击 / Left mouse click: Attack<br>
+        我们在游戏里有详细的介绍，剩下的到游戏里再探索吧。<br>
+        Detailed instructions are provided in the game. The rest is up to you to explore!
+        </p>
+
+        
+        <p>
+            <a href="https://github.com/fzj-2023/XJTU-jhc/blob/main/Proposal%20Final%20Verson%20(2).pptx">Game Pitch</a> 
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://tetetetetetetet.github.io/Cyberchosis_playtest/">Click to Play</a>
+        <br/><p></p>
+
+        <iframe width="560" height="340" src="https://player.bilibili.com/player.html?bvid=BV1mXQqYXEE1&page=1" frameborder="0" allowfullscreen></iframe>
+        <p></p>
+
+        <img border="0" src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Start.png?raw=true" width="300px" />
+        <img border="0" src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Intro.png?raw=true" width="300px" />
+        <img border="0" src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Scene2.png?raw=true" width="300px" />
+        <img border="0" src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Boss1.png?raw=true" width="300px" />
+        <img border="0" src="https://github.com/fzj-2023/fzj-2023.github.io/blob/main/Boss2.png?raw=true" width="300px" />
+        
+    <br/><b>Credit</b>
+            <ul>
+                <li>
+                    创意来源 / Inspiration: Dead Cells, Sekiro
+                </li>
+                <li>
+                    动画素材 / Assets: Unity Asset Store:
+                    <a href="https://assetstore.unity.com/packages/2d/characters/hero-knight-pixel-art-165188">HeroKnight</a>, 
+                    <a href="https://assetstore.unity.com/packages/tools/gui/dialogue-system-248969">Dialogue System</a>, 
+                    <a href="https://assetstore.unity.com/packages/2d/characters/hero-nad-opponents-animation-140776">Enemy</a>.......
+                    <br>
+                </li>
+                <li>
+                    音乐素材 / Music: Dead Cells, Unity Asset Store
+                </li>
+            </ul>
+    </td>
+</tr>
+
+    
+    
+    <! ---- 6 ----!>
+	<tr>
+    <td align="center" style="text-align:left;">
+      
+      
+      
+      <p></p>
+      <b>Developers</b></br>
+      闫伍杰 Yan Wujie<br/>
+      <br/>
+      王启源 Wan Qiyuan<br/>
+      <br/>
+      肖博暄 Xiao Boxuan<br/>
+      <br/>
+      贺佳宁 He Jianing<br/>
+    </td>
+    <td>
+      <p><b><u>Phantom Mirage</u></b></p> 
+      <p>
+        Step into a world of mysterious illusions and cunning puzzles! In Phantom Mirage, you control a brave adventurer who can create “phantoms of the past” to activate various contraptions and unlock new pathways. 
+        Carefully plan where and when you leave these phantoms, as colliding with them or falling into the void will spell instant failure!
+        Each level introduces different “phantom generation steps.” This mechanic challenges you to observe and strategize, anticipating when your phantom should appear to help you reach the exit. With every new stage, the environment grows more complex, and the number of phantom steps changes, forcing you to think on your feet—or rather, your phantoms’ feet!
+        Dare to journey into Phantom Mirage where your past is more than just a memory—it’s your key to victory…or your downfall.
+      </p>
+      <p>
+      <a href="https://docs.google.com/presentation/d/1VTeDFtqJ5u6rvuVPdSiZT22LbsivZTo4/edit?usp=sharing&ouid=117429313032242329535&rtpof=true&sd=true">Game Pitch</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="https://67d7ab8dc39fc200084b7c81--thunderous-scone-cfaddd.netlify.app/">Click to Play</a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href="https://drive.google.com/file/d/1GVsy5Q1ig6q1fjwtRnrm7haFRgZv1ZcR/view?usp=sharing">EXE Download</a><br/>
+      <p></p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/j6WaIYY-a80?si=K0yhKsNC3eNhDoiE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p></p>
+      <img border="0" src="https://drive.google.com/thumbnail?id=12R2KWTFJEdIuFv3IDlmcNa3CclWhvd9H" width="300px"/>
+      <img border="0" src="https://drive.google.com/thumbnail?id=1qjV0pxxOeq91JqS5hvCFF_vCSQZBHC-i" width="300px"/>
+      <img border="0" src="https://drive.google.com/thumbnail?id=1tpnduoRs_-vMjt0FlzFZC5xniwjabVOb" width="300px"/>
+      <img border="0" src="https://drive.google.com/thumbnail?id=1WbBE2zQ6VKy3klC_ECnZv_yNca_8_NZz" width="300px"/>
+       
+    </td>
+  </tr>
+        
+    </table>
+
+</body>
+</html>
+    
