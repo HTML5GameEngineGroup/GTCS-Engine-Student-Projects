@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity Web Player | Don't Drop</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+
+    <style>
+      #page-guide {
+        position: fixed;
+        top: 18px;
+        left: 18px;
+        z-index: 9999;
+        background: #ffffff;
+        border: 2px solid #8aa0bc;
+        border-radius: 18px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+        padding: 18px 22px;
+        font-family: "Consolas", "Courier New", "Microsoft YaHei", monospace;
+        font-size: 15px;
+        line-height: 1.5;
+        color: #111;
+        max-width: 320px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page-guide">
+    按R重新开始游戏<br>
+    玩家一：<br>
+    AD 左右移动<br>
+    W 跳（二段跳）<br>
+    S 下平台<br>
+    F 攻击<br>
+
+    玩家二：<br>
+    左右箭头 左右移动<br>
+    上箭头 跳（二段跳）<br>
+    下箭头 下平台<br>
+    右Ctrl 攻击<br>
+
+    玩家三四：加入手柄按攻击键自动接入<br>
+    摇杆移动，south键（对Xbox手柄来说是A）攻击<br>
+
+    选人界面按攻击加入，再次按攻击确认，所有人确认进入选图<br>
+
+    图中会随机掉落道具<br>
+    捡到鞋子移速加快<br>
+    红心能让自己生命+1<br>
+    剑能增加下一次将对手击飞的距离<br>
+    将对手击下平台扣血，最后存活玩家胜利<br>
+    </div>
+
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width="960" height="540" tabindex="-1"></canvas>
+
+      <div id="unity-loading-bar">
+        <div id="unity-logo"></div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+      </div>
+
+      <div id="unity-warning"></div>
+
+      <div id="unity-footer">
+        <div id="unity-logo-title-footer"></div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Don't Drop</div>
+      </div>
+    </div>
+
+    <script>
+      var canvas = document.querySelector("#unity-canvas");
+
+      function unityShowBanner(msg, type) {
+        var warningBanner = document.querySelector("#unity-warning");
+
+        function updateBannerVisibility() {
+          warningBanner.style.display = warningBanner.children.length ? "block" : "none";
+        }
+
+        var div = document.createElement("div");
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+
+        if (type == "error") {
+          div.style = "background: red; padding: 10px;";
+        } else {
+          if (type == "warning") div.style = "background: yellow; padding: 10px;";
+          setTimeout(function () {
+            warningBanner.removeChild(div);
+            updateBannerVisibility();
+          }, 5000);
+        }
+
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/EXE.loader.js";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/EXE.data",
+        frameworkUrl: buildUrl + "/EXE.framework.js",
+        codeUrl: buildUrl + "/EXE.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Don't Drop",
+        productVersion: "1.0",
+        showBanner: unityShowBanner,
+      };
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        var meta = document.createElement("meta");
+        meta.name = "viewport";
+        meta.content =
+          "width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes";
+        document.getElementsByTagName("head")[0].appendChild(meta);
+
+        document.querySelector("#unity-container").className = "unity-mobile";
+        canvas.className = "unity-mobile";
+      } else {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+      }
+
+      document.querySelector("#unity-loading-bar").style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          document.querySelector("#unity-progress-bar-full").style.width = 100 * progress + "%";
+        }).then((unityInstance) => {
+          document.querySelector("#unity-loading-bar").style.display = "none";
+          document.querySelector("#unity-fullscreen-button").onclick = () => {
+            unityInstance.SetFullscreen(1);
+          };
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
